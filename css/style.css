@@ -1,0 +1,236 @@
+/*-------------------------RESET-------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*--------------------------BODY-------------------------*/
+html, body {
+    background-color: #e0f5f1;;
+}
+
+/*-------------------------HEADER-------------------------*/
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height:12vh;
+    background-color: #fcb900;
+}
+header img {
+    height:80px;
+}
+
+/* ruta de especisidad */
+header nav ul {
+  display: flex;  
+  list-style: none;
+}
+header nav ul li{ 
+    font-weight: bolder;
+    padding:5px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    background-color: rgb(153, 155, 130);
+    padding:8px;
+    color:  white;
+    border-radius: 10px;
+}
+
+/*---------------------------BANNER-------------------------*/
+    .heroSection {
+        background-image: url('../img/banner.png');
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heroSection h2 {
+        color: rgb(46, 46, 48);
+        font-size:60px;
+        backdrop-filter: blur(3px);
+        padding:30px;
+    }
+
+
+/*---------------------------MAIN-------------------------*/
+main {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background:#e0f5f1;   
+    flex-direction:column;
+    width:150vh;
+    height: 120vh;
+}
+.container p {
+    margin:5px;
+    padding:5px;
+}
+
+
+.aside {
+    margin:20px;
+    display:flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:#e0f5f1;
+    width: 30%;
+    gap:20px;
+}
+.aside p {
+    text-align: center;
+    padding: 20px;
+}
+.asideBox1, .asideBox2, .asideBox3 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background:#fcb900;
+    height:10vh;
+    width:50vh  
+}
+.asideBox1 {
+    padding:20px;
+}
+
+.containerUno {
+    display:grid;
+    justify-content: space-between;
+    align-items:center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding:30px;
+}
+#boxUno {
+    grid-column: span 3;
+}
+#boxUno h1,p{
+    text-align: center;
+}
+#boxDos {
+    text-align: center;
+}
+#boxDos img{
+    height: 30vh;
+}
+#boxTres p,#boxCuatro p{
+    border-left: 5px solid red;
+}
+
+
+
+
+.containerHotel , .containerRestaurant{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+.containerHotel {
+    margin:10px;
+    padding:30px;
+    border-bottom: 2px solid red;
+}
+.containerRestaurant {
+    margin:10px;
+    padding:30px;
+}
+
+#cardUno,#cardDos, #cardTres, #cardCuatro {
+    padding:10px;
+    border-bottom: 2px solid red;
+}
+
+h1 {
+    color:#e74c3c ;
+    text-transform: uppercase;
+}
+h2 {
+    color:#0e6655;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size:25px;
+    color:#e67e22;
+    text-decoration: underline;
+    text-align:center;
+}
+
+/*-------------------------BOOTSTRAP---------------------*/
+.color-mio {
+    background-color: #fcb900;
+}
+
+
+
+
+/*-------------------------FOOTER-------------------------*/
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebc96b;
+    height: 10hv;
+    text-align:center;
+     
+}
+
+footer div a {
+    text-decoration: none;
+}
+
+
+/*-------------------------MOBILE-------------------------*/
+
+@media only screen and (max-width: 575px) {
+    body {
+      color:rebeccapurple;
+      background-color: black;
+    }
+    .containerUno {
+        display:flex;
+        flex-direction: column;     
+        justify-content:center;
+        align-items: center;
+    }
+  }
+
+    
+/*-------------------------DESKTOP-------------------------*/
+
+@media only screen and (max-width: 1024px) {
+    body {
+      color:red;
+      background-color: whitesmoke;
+    }
+    .containerUno {
+        display:flex;
+        flex-direction: column;     
+        justify-content:center;
+        align-items: center;
+    }
+  }
