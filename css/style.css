@@ -18,7 +18,7 @@ header {
     display:flex;
     justify-content:space-between;
     align-items: center;
-    height:12vh;
+    height:10vh;
     background-color: #fcb900;
 }
 header img {
@@ -64,22 +64,21 @@ header nav ul li a{
 /*---------------------------MAIN-------------------------*/
 main {
     display:flex;
+    height: 80vh;
+    width:100%;
+    align-items: center;
     justify-content:center;
-    align-items:center;
-    height: 100%;
-    width: 100%;
     
 }
 
 
 .container {
     display:flex;
-    justify-content:center;
-    align-items: center;
     background:#e0f5f1;   
     flex-direction:column;
-    width:150vh;
-    height: 120vh;
+    height:80vh; 
+    margin: 20px;
+    padding:15px;
 }
 .container p {
     margin:5px;
@@ -139,28 +138,83 @@ main {
     border-left: 5px solid red;
 }
 
+/*----------------------como LLegar-------------------------*/
 
 
-
-.containerHotel , .containerRestaurant{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
+.boxUno h3{
+    text-align: center;
 }
-.containerHotel {
+
+/*----------------------page LLegar-------------------------*/
+.sectionUno, .sectionDos {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
     margin:10px;
-    padding:30px;
-    border-bottom: 2px solid red;
-}
-.containerRestaurant {
-    margin:10px;
-    padding:30px;
-}
-
-#cardUno,#cardDos, #cardTres, #cardCuatro {
     padding:10px;
-    border-bottom: 2px solid red;
+    gap: 20px;
+}   
+
+.sectionUnoIntro,  .sectionDosIntro {
+    text-align: left;
+    grid-column: 1/-1;
 }
+
+.sectionUnoIntro p, .sectionDosIntro p{
+    text-align: left;
+}
+
+.containerSectionUno, .containerSectionDos {
+    text-align: center;
+}
+.containerSectionUno p,h3, .containerSectionDos p,h3 {
+    color: rgb(90, 89, 89);
+    text-align:left;
+}
+.containerSectionUno h3 {
+    text-transform: uppercase;
+}
+.containerSectionUno img, .containerSectionDos img {
+    height: 400px;
+    width: 600px;
+}
+
+
+/*----------------------page prestadores-------------------------*/
+.sectionHotel, .sectionRestaurant{
+    display:grid; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    padding:20px;
+}
+
+.cardHotelImg, .cardRestoImg{
+    grid-column:span 3;
+    text-align: center;
+}
+
+.cardHotel h3, .cardResto h3{
+    text-align:center;
+    text-transform: uppercase;
+
+}
+.cardHotel p, .cardResto p{
+    text-align: center;
+}
+.sectionHotel {
+    border-bottom: 2px solid red;
+} 
+
+.cardHotelImg img, .cardRestoImg img{
+    height: 150px;
+    width: 200px;
+}
+
 
 h1 {
     color:#e74c3c ;
@@ -175,7 +229,6 @@ h3 {
     font-size:25px;
     color:#e67e22;
     text-decoration: underline;
-    text-align:center;
 }
 
 /*-------------------------BOOTSTRAP---------------------*/
@@ -194,7 +247,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #ebc96b;
-    height: 10hv;
+    height: 10vh;
     text-align:center;
      
 }
